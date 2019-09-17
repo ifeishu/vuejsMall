@@ -2,7 +2,7 @@ import axios from './axios'
 
 export function getDetail(iid) {
   return axios({
-    url: '/detail',
+    url: '/api/v1/detail',
     params: {
       iid
     }
@@ -11,7 +11,7 @@ export function getDetail(iid) {
 
 export function getRecommend() {
   return axios({
-    url: '/recommend'
+    url: '/api/v1/recommend'
   })
 }
 

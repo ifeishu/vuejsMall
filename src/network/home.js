@@ -5,13 +5,13 @@ export const RECOMMEND = 'recommend'
 
 export function getHomeMultidata() {
   return axios({
-    url: '/home/multidata'
+    url: '/api/v1/home/multidata'
   })
 }
 
 export function getHomeData(type, page) {
   return axios({
-    url: '/home/data',
+    url: '/api/v1/home/data',
     params: {
       type,
       page
